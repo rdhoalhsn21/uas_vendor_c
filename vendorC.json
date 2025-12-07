@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
     {
       "id": 501,
@@ -12,4 +13,20 @@
       "stock": 50
     }
   ]
+=======
+[
+    {
+      "id": 501,
+      "details": {
+        "name": "Nasi Tempong",
+        "category": "Food"
+      },
+      "pricing": {
+        "base_price": 20000,
+        "tax": 2000
+      },
+      "stock": 50
+    }
+  ]
+>>>>>>> 5edc6a4b23b4647dd4a3aff87bf7ca173fb6a081
   
