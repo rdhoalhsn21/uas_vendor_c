@@ -1,8 +1,10 @@
 const fs = require("fs");
+const path = require("path");
 
-// Membaca file vendorC.json
-const raw = fs.readFileSync("vendorC.json", "utf8");
-const data = JSON.parse(raw);
+const filePath = path.join(__dirname, "DATA", "vendorC.json");
 
+console.log("File dibaca dari:", filePath);
+
+const raw = fs.readFileSync(filePath, "utf8");
 console.log("=== Output Original Vendor C ===");
-console.log(JSON.stringify(data, null, 2));
+console.log(raw);

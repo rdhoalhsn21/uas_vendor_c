@@ -1,15 +1,8 @@
 {
-  "name": "uas-vendor-c",
+  "name": "vendor-c",
   "version": "1.0.0",
-  "description": "",
-  "main": "normalizeVendorC.js",
+  "main": "API/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "pg": "^8.16.3"
+    "start": "node vendorC.js"
   }
 }
