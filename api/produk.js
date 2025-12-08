@@ -3,12 +3,14 @@ const path = require("path");
 
 module.exports = (req, res) => {
   try {
-    const jsonPath = path.join(__dirname, "..", "data", "vendorC.json");
+    // path ke folder data (IMPORTANT: harus huruf kecil "data")
+    const filePath = path.join(__dirname, "..", "data", "vendorC.json");
 
-    const raw = fs.readFileSync(jsonPath, "utf8");
+    // baca file
+    const raw = fs.readFileSync(filePath, "utf8");
     const data = JSON.parse(raw);
 
-    // Vendor C mengirim RAW
+    // kirim RAW tanpa modifikasi
     res.status(200).json(data);
 
   } catch (error) {
