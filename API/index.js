@@ -4,7 +4,7 @@ const path = require("path");
 module.exports = (req, res) => {
   try {
     // Path ke JSON
-    const jsonPath = path.join(__dirname, "..", "DATA", "vendorC.json");
+    const jsonPath = path.join(__dirname, "..", "data", "vendorC.json");
 
     // Baca isi file
     const raw = fs.readFileSync(jsonPath, "utf8");
