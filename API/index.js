@@ -5,7 +5,7 @@ const path = require("path"); // WAJIB untuk Vercel
 module.exports = (req, res) => {
     try {
         // Tentukan path relatif ke DATA/vendorC.json
-        const dataPath = path.join(__dirname, '..', 'DATA', 'vendorC.json'); 
+        const dataPath = path.join(__dirname, '..', 'data', 'vendorC.json'); 
         
         // Baca dan parse data
         const raw = fs.readFileSync(dataPath, "utf8");
