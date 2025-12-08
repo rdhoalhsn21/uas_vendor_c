@@ -1,8 +1,8 @@
 {
-  "name": "vendor-c",
+  "name": "vendor-c-api",
   "version": "1.0.0",
   "main": "API/index.js",
   "scripts": {
-    "start": "node vendorC.js"
+    "start": "node API/index.js"
   }
 }

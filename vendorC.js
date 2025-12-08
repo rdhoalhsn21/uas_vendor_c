@@ -4,6 +4,4 @@ const path = require("path");
 const filePath = path.join(__dirname, "data", "vendorC.json");
 
 console.log("Membaca:", filePath);
-
-const raw = fs.readFileSync(filePath, "utf8");
-console.log(JSON.parse(raw));
+console.log(JSON.parse(fs.readFileSync(filePath, "utf8")));
